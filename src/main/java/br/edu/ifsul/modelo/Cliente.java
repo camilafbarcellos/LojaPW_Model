@@ -58,7 +58,7 @@ public class Cliente implements Serializable {
     @Temporal(TemporalType.DATE)
     @NotNull(message = "A data de nascimento deve ser informada!")
     @Column(name = "datanasc", nullable = false)
-    private Calendar dataNasc = Calendar.getInstance();
+    private Calendar dataNasc;
 
     public Calendar getDataNasc() {
         return dataNasc;
